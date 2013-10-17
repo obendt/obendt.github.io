@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1920px" height="1280px" viewBox="0 0 1920 1280" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <title>background</title>
+    <description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <rect d="M-234,-162 L-234,1427 L2071,1427 L2071,-162 L-234,-162 Z M-234,-162" id="Rectangle-1" stroke="#979797" fill="#EEE8D5" sketch:type="MSShapeGroup" x="-234" y="-162" width="2305" height="1589"></rect>
+        <g id="background" sketch:type="MSArtboardGroup" font-weight="normal" font-family="Courier New" fill="#B58900" font-size="1530.12247" fill-opacity="0.0994370404">
+            <g id="/-+-*" sketch:type="MSLayerGroup" transform="translate(413.000000, -125.000000)">
+                <text id="/" sketch:type="MSTextLayer">
+                    <tspan x="0" y="1274" fill="#000000">/</tspan>
+                </text>
+                <text id="*" sketch:type="MSTextLayer">
+                    <tspan x="263" y="1792" fill="#000000">*</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>
