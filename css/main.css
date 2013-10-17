@@ -1,16 +1,28 @@
-/* ==========================================================================
+/* ====sd======================================================================
    HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
    ========================================================================== */
 
-html,
+html {   
+  background: url(../img/background.svg) no-repeat center center fixed;   
+  -webkit-background-size: cover;  
+  -moz-background-size: cover;  
+  -o-background-size: cover;  
+  background-size: cover;  
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://media02.hongkiat.com/oversized-background-image-design/bg.jpg', sizingMethod='scale')";  
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.http://media02.hongkiat.com/oversized-background-image-design/bg.jpg', sizingMethod='scale')    
+}
+
 button,
 input,
 select,
 textarea {
-    color: #222;
+    color: #657b83;
+    background: #eee8d5;
 }
 
 body {
+    color: #657b83;
+    font-family: "Inconsolata";
     font-size: 1em;
     line-height: 1.4;
 }
@@ -55,13 +67,17 @@ textarea {
     padding: 0.2em 0;
 }
 
+a {
+    color: #268bd2;
+}
+
 
 /* ===== Initializr Styles ==================================================
    Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
    ========================================================================== */
 
 body {
-    font: 16px/26px Helvetica, Helvetica Neue, Arial;
+    font: 18px/32px "Inconsolata", Helvetica, Helvetica Neue, Arial;
 }
 
 .wrapper {
@@ -70,26 +86,27 @@ body {
 }
 
 /* ===================
-    ALL: Orange Theme
+    ALL: SCG Theme
    =================== */
 
-.header-container {
-    border-bottom: 20px solid #e44d26;
+/*.header-container {
+
 }
 
 .footer-container,
 .main aside {
-    border-top: 20px solid #e44d26;
-}
+
+}*/
 
 .header-container,
 .footer-container,
 .main aside {
-    background: #f16529;
+    background: #002b36;
 }
 
 .title {
-    color: white;
+    font-weight: normal;
+    color: #839496;
 }
 
 /* ==============
@@ -132,7 +149,20 @@ nav a:hover {
 }
 
 .main article h1 {
+    line-height: 1.4;
+    font-size: 1.4em;
+}
+
+.main article h2 {
+    line-height: 1.4;
     font-size: 2em;
+}
+
+.main article {
+    background: #fdf6e3;
+    opacity: 0.8;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .main aside {
@@ -141,8 +171,8 @@ nav a:hover {
 }
 
 .footer-container footer {
-    color: white;
-    padding: 20px 0;
+    color: #657b83;
+    padding: 10px 0;
 }
 
 /* ===============
@@ -156,12 +186,46 @@ nav a:hover {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+.current {
+    padding-bottom:20px;
+}
 
+.current .push {
+    line-height: 1.4;
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-bottom:0px;
+    margin-left:25px;
+    text-indent: -25px;
+}
 
+.current .info {
+  margin:0px 0px 0px 25px;
+}
 
+.current .company {
+    color: #cb4b16;
+}
 
+.current .result {
+    color: #2aa198;
+}
 
+.column {
+    width: 300px;
+}
 
+.spceialities li {
+    list-style-type: circle;
+    margin-left: 15px;
+    text-indent: -15px;
+}
+
+.logo {
+    margin-left: 10px;
+    margin-top: 23px;
+    height:2em;
+}
 
 
 
@@ -178,7 +242,7 @@ nav a:hover {
 @media only screen and (min-width: 480px) {
 
 /* ====================
-    INTERMEDIATE: Menu
+    INTERMEDIATE: Men
    ==================== */
 
     nav a {
@@ -212,17 +276,22 @@ nav a:hover {
 
 @media only screen and (min-width: 768px) {
 
+    .wrapper {
+        width: 640px;
+        margin: 0 auto;
+    }
+
 /* ====================
     WIDE: CSS3 Effects
    ==================== */
 
-    .header-container,
+/*    .header-container,
     .main aside {
         -webkit-box-shadow: 0 5px 10px #aaa;
            -moz-box-shadow: 0 5px 10px #aaa;
                 box-shadow: 0 5px 10px #aaa;
     }
-
+*/
 /* ============
     WIDE: Menu
    ============ */
@@ -231,35 +300,23 @@ nav a:hover {
         float: left;
     }
 
-    nav {
-        float: right;
-        width: 38%;
+    .top-contact {
+        float:right;
+        margin-top:29px;
     }
-
+    
 /* ============
     WIDE: Main
    ============ */
 
     .main article {
         float: left;
-        width: 57%;
+        width: 100%;
     }
 
     .main aside {
         float: right;
         width: 28%;
-    }
-}
-
-@media only screen and (min-width: 1140px) {
-
-/* ===============
-    Maximal Width
-   =============== */
-
-    .wrapper {
-        width: 1026px; /* 1140px - 10% for margins */
-        margin: 0 auto;
     }
 }
 
