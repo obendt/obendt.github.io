@@ -1,31 +1,33 @@
-/* ====sd======================================================================
-   HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
    ========================================================================== */
 
-html {   
-  background: url(../img/background.png) no-repeat center center fixed;   
-  -webkit-background-size: cover;  
-  -moz-background-size: cover;  
-  -o-background-size: cover;  
-  background-size: cover;  
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://media02.hongkiat.com/oversized-background-image-design/bg.jpg', sizingMethod='scale')";  
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.http://media02.hongkiat.com/oversized-background-image-design/bg.jpg', sizingMethod='scale')    
-}
-
+html,
 button,
 input,
 select,
 textarea {
-    color: #657b83;
-    background: #eee8d5;
+    color: #222;
 }
 
-body {
-    color: #657b83;
-    font-family: "Inconsolata";
+html {
     font-size: 1em;
     line-height: 1.4;
 }
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
 
 ::-moz-selection {
     background: #b3d4fc;
@@ -37,6 +39,10 @@ body {
     text-shadow: none;
 }
 
+/*
+ * A better looking default horizontal rule
+ */
+
 hr {
     display: block;
     height: 1px;
@@ -46,9 +52,21 @@ hr {
     padding: 0;
 }
 
-img {
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
     vertical-align: middle;
 }
+
+/*
+ * Remove default fieldset styles.
+ */
 
 fieldset {
     border: 0;
@@ -56,151 +74,113 @@ fieldset {
     padding: 0;
 }
 
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
 textarea {
     resize: vertical;
 }
 
-.chromeframe {
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
     margin: 0.2em 0;
     background: #ccc;
     color: #000;
     padding: 0.2em 0;
 }
 
-a {
-    color: #268bd2;
-}
-
-
-/* ===== Initializr Styles ==================================================
-   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
-   ========================================================================== */
-
-body {
-    font: 18px/32px "Inconsolata", Helvetica, Helvetica Neue, Arial;
-}
-
-.wrapper {
-    width: 90%;
-    margin: 0 5%;
-}
-
-/* ===================
-    ALL: SCG Theme
-   =================== */
-
-/*.header-container {
-
-}
-
-.footer-container,
-.main aside {
-
-}*/
-
-.header-container,
-.footer-container,
-.main aside {
-    background: #002b36;
-}
-
-.title {
-    font-weight: normal;
-    color: #839496;
-}
-
-/* ==============
-    MOBILE: Menu
-   ============== */
-
-nav ul {
-    margin: 0;
-    padding: 0;
-}
-
-nav a {
-    display: block;
-    margin-bottom: 10px;
-    padding: 15px 0;
-
-    text-align: center;
-    text-decoration: none;
-    font-weight: bold;
-
-    color: white;
-    background: #e44d26;
-}
-
-nav a:hover,
-nav a:visited {
-    color: white;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
-/* ==============
-    MOBILE: Main
-   ============== */
-
-.main {
-    padding: 30px 0;
-}
-
-.main article h1 {
-    line-height: 1.4;
-    font-size: 1.4em;
-}
-
-.main article h2 {
-    line-height: 1.4;
-    font-size: 2em;
-}
-
-.main article {
-    background: #fdf6e3;
-    opacity: 0.8;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-.main aside {
-    color: white;
-    padding: 0px 5% 10px;
-}
-
-.footer-container footer {
-    color: #657b83;
-    padding: 10px 0;
-}
-
-/* ===============
-    ALL: IE Fixes
-   =============== */
-
-.ie7 .title {
-    padding-top: 20px;
-}
-
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-.current {
-    padding-bottom:20px;
+html {
+    background: url(../img/background.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://media02.hongkiat.com/oversized-background-image-design/bg.jpg', sizingMethod='scale')";
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.http://media02.hongkiat.com/oversized-background-image-design/bg.jpg', sizingMethod='scale')
 }
 
-.current .push {
+body {
+    font: 18px/32px "Inconsolata", Helvetica, Helvetica Neue, Arial;
+    color: #333333;
+    font-size: 1.1em;
     line-height: 1.4;
+}
+
+a {
+    color: #247DA0;
+}
+
+.header-container {
+    background: #474747;
+}
+
+.header {
+    float: left;
+    font-size: 2em;
+    color: #AEAEAE;
+    margin: 5px 0;
+}
+
+.logo {
+    float: left;
+    margin-top: 20px;
+}
+
+.info-contact {
+    float: right;
+    margin-top: 25px;
+}
+
+.content-wrapper {
+    max-width: 680px;
+    margin: 0 auto;
+    padding:10px 20px;
+}
+
+.section-container {
+    background: #ffffff;
+    margin: 60px 0;
+}
+
+.section-container .content-wrapper {
+    background-image: url("../img/flag.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+.content-wrapper h2 {
+    margin: 0;
+    font-weight: normal;
+}
+
+.section-header {
+    font-size: 2em;
+    padding: 0 0 20px 0px;
+}
+
+.push {
     font-size: 1.4em;
-    font-weight: bold;
-    margin-bottom:0px;
     margin-left:25px;
     text-indent: -25px;
 }
 
+.push:first-child {
+    margin-top: 0;
+}
+
+.push:last-child {
+    margin-bottom: 0;
+}
+
 .current .info {
-  margin:0px 0px 0px 25px;
+    margin:-20px 0px 0px 25px;
 }
 
 .current .company {
@@ -211,122 +191,50 @@ nav a:hover {
     color: #2aa198;
 }
 
-.column {
-    width: 300px;
+.box {
+    float: left;
 }
 
-.spceialities li {
+.left { width: 45%; padding: 0px 5% 0px 0px }
+.right { width: 50%; }
+
+.box li {
+    line-height: 1.8;
     list-style-type: circle;
     margin-left: 15px;
     text-indent: -15px;
 }
 
-.logo {
-    margin-left: 10px;
-    margin-top: 23px;
-}
-
-
-
-
-
-
-
-
-
-/* ==========================================================================
-   Media Queries
-   ========================================================================== */
-
-@media only screen and (min-width: 480px) {
-
-/* ====================
-    INTERMEDIATE: Men
-   ==================== */
-
-    nav a {
-        float: left;
-        width: 27%;
-        margin: 0 1.7%;
-        padding: 25px 2%;
-        margin-bottom: 0;
-    }
-
-    nav li:first-child a {
-        margin-left: 0;
-    }
-
-    nav li:last-child a {
-        margin-right: 0;
-    }
-
-/* ========================
-    INTERMEDIATE: IE Fixes
-   ======================== */
-
-    nav ul li {
-        display: inline;
-    }
-
-    .oldie nav a {
-        margin: 0 0.7%;
-    }
-}
-
-@media only screen and (min-width: 768px) {
-
-    .wrapper {
-        width: 640px;
-        margin: 0 auto;
-    }
-
-/* ====================
-    WIDE: CSS3 Effects
-   ==================== */
-
-/*    .header-container,
-    .main aside {
-        -webkit-box-shadow: 0 5px 10px #aaa;
-           -moz-box-shadow: 0 5px 10px #aaa;
-                box-shadow: 0 5px 10px #aaa;
-    }
-*/
-/* ============
-    WIDE: Menu
-   ============ */
-
-    .title {
-        float: left;
-    }
-
-    .top-contact {
-        float:right;
-        margin-top:29px;
-    }
-    
-/* ============
-    WIDE: Main
-   ============ */
-
-    .main article {
-        float: left;
+@media only screen and (max-width: 680px) {
+    .header{
         width: 100%;
+        padding-left:6px;
+    }
+    .info-contact{
+        float:left;
+        margin-top: 0;
+        padding-left: 6px;
     }
 
-    .main aside {
-        float: right;
-        width: 28%;
-    }
+    .left { width: 100%; }
+    .right { width: 100%; }
 }
+
+
 
 /* ==========================================================================
    Helper classes
    ========================================================================== */
 
+/*
+ * Image replacement
+ */
+
 .ir {
     background-color: transparent;
     border: 0;
     overflow: hidden;
+    /* IE 6/7 fallback */
     *text-indent: -9999px;
 }
 
@@ -337,10 +245,18 @@ nav a:hover {
     height: 150%;
 }
 
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
 .hidden {
     display: none !important;
     visibility: hidden;
 }
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
 
 .visuallyhidden {
     border: 0;
@@ -353,6 +269,11 @@ nav a:hover {
     width: 1px;
 }
 
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
     clip: auto;
@@ -363,26 +284,65 @@ nav a:hover {
     width: auto;
 }
 
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
 .invisible {
     visibility: hidden;
 }
 
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
 .clearfix:before,
 .clearfix:after {
-    content: " ";
-    display: table;
+    content: " "; /* 1 */
+    display: table; /* 2 */
 }
 
 .clearfix:after {
     clear: both;
 }
 
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
 .clearfix {
     *zoom: 1;
 }
 
 /* ==========================================================================
-   Print styles
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
    ========================================================================== */
 
 @media print {
