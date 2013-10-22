@@ -106,8 +106,13 @@ html {
     filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.http://media02.hongkiat.com/oversized-background-image-design/bg.jpg', sizingMethod='scale')
 }
 
+/*    font: 18px/32px "Inconsolata", Helvetica, Helvetica Neue, Arial;
+    font: 18px/32px "Courier New", Helvetica, Helvetica Neue, Arial;
+    font: 18px/32px "Sanchez" serif;
+*/
+
 body {
-    font: 18px/32px "Inconsolata", Helvetica, Helvetica Neue, Arial;
+    font: 18px/32px "Rokkitt" serif;
     color: #333333;
     font-size: 1.1em;
     line-height: 1.4;
@@ -123,6 +128,7 @@ a {
 
 .header {
     float: left;
+    font-family: "Inconsolata", Helvetica, Helvetica Neue, Arial;
     font-size: 2em;
     color: #AEAEAE;
     margin: 5px 0;
@@ -135,39 +141,37 @@ a {
 
 .info-contact {
     float: right;
-    margin-top: 25px;
+    margin-top: 22px;
 }
 
 .content-wrapper {
     max-width: 680px;
     margin: 0 auto;
-    padding:10px 20px;
+    padding: 10px 20px;
 }
+
 
 .section-container {
     background: #ffffff;
     margin: 60px 0;
 }
 
-.section-container .content-wrapper {
-    background-image: url("../img/flag.png");
-    background-repeat: no-repeat;
-    background-position: bottom right;
-}
-
 .content-wrapper h2 {
+    font-family: "Inconsolata", Helvetica, Helvetica Neue, Arial;
     margin: 0;
     font-weight: normal;
 }
 
 .section-header {
+    font-family: "Inconsolata", Helvetica, Helvetica Neue, Arial;
     font-size: 2em;
     padding: 0 0 20px 0px;
 }
 
 .push {
+    font: 18px/32px "Inconsolata", Helvetica, Helvetica Neue, Arial;
     font-size: 1.4em;
-    margin-left:25px;
+    margin-left: 25px;
     text-indent: -25px;
 }
 
@@ -180,14 +184,18 @@ a {
 }
 
 .current .info {
-    margin:-20px 0px 0px 25px;
+    margin: -20px 0px 0px 25px;
 }
 
-.current .company {
+.love {
     color: #cb4b16;
 }
 
-.current .result {
+.client {
+    color: #cb4b16;
+}
+
+.result {
     color: #2aa198;
 }
 
@@ -195,32 +203,46 @@ a {
     float: left;
 }
 
-.left { width: 45%; padding: 0px 5% 0px 0px }
-.right { width: 50%; }
+.left {
+    width: 45%;
+    padding: 0px 5% 0px 0px
+}
+
+.right {
+    width: 50%;
+}
+
+.box ul {
+    padding: 0;
+    margin: 0;
+}
 
 .box li {
     line-height: 1.8;
     list-style-type: circle;
-    margin-left: 15px;
-    text-indent: -15px;
+    margin-left: 20px;
 }
 
 @media only screen and (max-width: 680px) {
-    .header{
+    .header {
         width: 100%;
-        padding-left:6px;
+        padding-left: 6px;
     }
-    .info-contact{
-        float:left;
+
+    .info-contact {
+        float: left;
         margin-top: 0;
         padding-left: 6px;
     }
 
-    .left { width: 100%; }
-    .right { width: 100%; }
+    .left {
+        width: 100%;
+    }
+
+    .right {
+        width: 100%;
+    }
 }
-
-
 
 /* ==========================================================================
    Helper classes
@@ -334,9 +356,9 @@ a {
 }
 
 @media print,
-       (-o-min-device-pixel-ratio: 5/4),
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 120dpi) {
+(-o-min-device-pixel-ratio: 5/4),
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
 }
 
